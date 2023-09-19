@@ -55,8 +55,11 @@ function convertToRoman(num) {
 
 
   output = thousands + hundreds + tens + ones;
+    console.log(output);
+        document.getElementById("output").innerHTML = output;
+
   return output;
+  
 }
 
 
-console.log(convertToRoman(798));
