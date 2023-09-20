@@ -14,6 +14,12 @@ function convert() {
 
 
   function convertToRoman(num) {
+    if(num > 3999)
+    {
+      document.getElementById("output").innerHTML = "num to high max is 3,999";
+
+      return "undefined";
+    }
   var LengthOfNum = num.toString().length;
   var numString = num.toString();
 
